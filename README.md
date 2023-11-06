@@ -1,28 +1,14 @@
 ## Overview
 
-This repository is my solution for the problem 1.1 Write Hello world.
-
-### Task:  
-
-Write Go program what should write to stdout "Hello World" on startup. It should finish in 10 seconds with the message "Goodbye world".
-
-If the user interrupts the execution earlier, then you should print the message "Stopped by the user after x seconds"
-
-### Solution:
-
-I used channels and select statement to implement the solution.
-First channel is the timer channel that sends information once the time is up. In this case select statement prints "Goodbye world" and finishes the app.
-Second channel is interruption channel that sends information once it's getting interruption signal(or SIGTERM and SIGINT).
+This app is typing "Hello world" on startup and counts 10 seconds, after time is up it types "Goodbye world".
+If the execution was interrupted before time is up, app is typing "Stopped by the user after x seconds", where x is the time passed since the start of the program.
 
 ## How to run
 Clone the repository:
 
     git clone https://git.foxminded.ua/foxstudent106264/task-1.1.git
 
-Build and application:
+Run the application:
 
-    go build 
+    go run main.go 
     
-Run the .exe file:
-
-    ./task-1.1.exe
