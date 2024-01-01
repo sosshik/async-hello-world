@@ -1,3 +1,3 @@
-module task-1.1
+module github.com/sosshik/async-hello-world
 
 go 1.21.0

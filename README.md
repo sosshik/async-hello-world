@@ -6,7 +6,7 @@ If the execution was interrupted before time is up, app is typing "Stopped by th
 ## How to run
 Clone the repository:
 
-    git clone https://git.foxminded.ua/foxstudent106264/task-1.1.git
+    git clone https://github.com/sosshik/async-hello-world.git
 
 Run the application:
 
